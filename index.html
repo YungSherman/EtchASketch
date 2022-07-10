@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Etch A Sketch</title>
+</head>
+<body>
+  <h1>Etch-a-sketch</h1>
+  <main class="main">
+    <div class="settings">
+      <input class="color-picker" id="colorPicker" type="color" value="#333333">
+      <button id="btnColor">Color mode</button>
+      <button id="btnRainbow">Rainbow mode</button>
+      <button id="btnEraser">Eraser</button>
+      <button id="btnClear">Clear</button>
+      <div class="grid-modes">
+        <button class="grid-mode ten" id="ten">10x10</button>
+        <button class="grid-mode active twenty" id="twenty">20x20</button>
+        <button class="grid-mode thirty" id="thirty">30x30</button>
+      </div>
+    </div>
+    <div id="grid" class="grid"></div>
+      <div class="grid-container twentyxtwenty"></div>
+  </main>
+
+<script src="main.js"></script>
+</body>
+</html>
