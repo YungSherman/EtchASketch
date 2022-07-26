@@ -28,6 +28,29 @@ h1 {
   margin: 0 auto;
   margin-top: 100px;
 }
+@media (min-width: 200px) and (max-width: 767px) {
+  .main {
+    height: 150vh;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    height: 120vh;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .main {
+    margin-top: 30px;
+  }
+}
 
 .settings {
   width: 40%;
@@ -35,6 +58,17 @@ h1 {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .settings {
+    height: 50%;
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .settings {
+    height: 50%;
+  }
 }
 
 .color-picker {
@@ -53,6 +87,18 @@ input[type=color]:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  input[type=color] {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  input[type=color] {
+    height: 60px;
+    width: 60px;
+  }
+}
 
 input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
@@ -70,6 +116,19 @@ button {
   transition: 0.3s ease-out;
   font-size: 20px;
 }
+@media (min-width: 200px) and (max-width: 767px) {
+  button {
+    width: 150px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  button {
+    height: 30px;
+    width: 150px;
+    font-size: 16px;
+  }
+}
 button:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -83,10 +142,33 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
 }
+@media (min-width: 200px) and (max-width: 767px) {
+  .grid-modes {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-modes {
+    width: 100%;
+  }
+}
 .grid-modes .grid-mode {
   height: 80px;
   width: 80px;
   border-radius: 50%;
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .grid-modes .grid-mode {
+    height: 60px;
+    width: 60px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .grid-modes .grid-mode {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 .tenxten {
@@ -123,4 +205,16 @@ button:hover {
   display: inline-grid;
   grid-gap: 1px;
   width: 50%;
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .grid-container {
+    height: 50%;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    height: 50%;
+    width: 100%;
+  }
 }
